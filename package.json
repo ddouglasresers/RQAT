@@ -1,7 +1,7 @@
 {
   "name": "rqat",
   "version": "1.0.0",
-  "description": "Interface for Topeka QA",
+  "description": "Interface for QA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,6 @@
     "excel4node": "^1.7.2",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
-    "msexcel-builder": "0.0.2",
     "mssql": "^6.2.1",
     "node-sspi": "^0.2.8"
   },
