@@ -1,0 +1,36 @@
+<form>
+   <center>
+      <div class="col-lg-63 mb-3">
+         <div class="card">
+            <h5 class="card-header">Search for Records</h5>
+            <div class="card-body">
+               <div class="form-group mb-4">
+                  <div style="float:left; width: 50%">
+                     Finished Goods Num<input type="text" id="fg" name="fg" class="form-control mb-2" placeholder="Enter Finished Goods Number">
+                  </div>
+                  <div style="float:right; width: 50%">
+                     Formula Num<input type="text" id="formula" name="formula" class="form-control mb-2" placeholder="Enter Formula Number">
+                  </div>
+               </div>
+               Intermediate Num<input type="text" id="intermediate" name="intermediate" class="form-control mb-2" placeholder="Enter Intermediate Number">
+            </div>
+            <h5 class="card-header">Date Range</h5>
+            <div class="card-body">
+               <div class="form-group mb-4">
+                  <div style="float:left; width: 50%">
+                     Start<input type="date" id="fromdate" name="fromdate" value="" class="form-control mb-2">
+                  </div>
+                  <div style="float:right; width: 50%">
+                     End<input type="date" id="todate" name="todate" value="" class="form-control mb-2">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </center>
+   <button type="submit" class="btn btn-primary btn-lg">Search Database Now</button>
+</form>
+<hr>
+<p>1.<b> Percent sign (%)</b> and <b>underscore ( __ )</b> can both be used for wildcard searches: </p>
+<p>An underscore represents a single character, whereas a percent can equal any number of characters.</p>
+<p>2. In addition to the date range, you must fill out <b>at least 1</b> of the fields.</p>

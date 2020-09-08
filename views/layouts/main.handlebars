@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	   <script>
+		   var dateAndTime = function () {
+           var time = new Date().toLocaleString();
+           document.getElementById('timer').innerHTML = time;
+		   }
+			 
+           setInterval(dateAndTime, 100);
+	   </script>
+	   
+      <style>
+         #logo {
+			 width:110px;
+		  }
+		  
+         #login, #icon {
+         color: white;
+         font-weight:bold;
+         }
+		  
+		  #timer, #cont {
+			  font-weight: bold;
+		  }
+	
+      </style>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>RQAT: {{title}}</title>
+      <!-- Favicon-->
+      <link rel="icon" type="image/x-icon" href="images/fav.png" />
+      <!-- Font Awesome icons (free version)-->
+      <script src="js/all.js" crossorigin="anonymous"></script>
+      <!-- Google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="css/styles.css" rel="stylesheet" />
+   </head>
+   <body id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+         <small id="login"> {{currentUser}} <i class="fa fa-user" id="icon" aria-hidden="true"></i></small> 
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/">reser's QA tool</a> 
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/"><i class="fa fa-search" aria-hidden="true"></i>&nbsp S e a r c h</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/reports"><i class="fa fa-folder-open mr-1" aria-hidden="true"></i>&nbsp R e p o r t s</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/"><i class="fa fa-database mr-1"></i>&nbsp Q u e r i e s</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Portfolio Section-->
+      <div class="container">
+         <h1>-</h1>
+      </div>
+      <!-- Contact Section-->
+      <section class="page-section" id="contact">
+         <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{title}}</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+               <div class="divider-custom-line"></div>
+               <div class="divider-custom-icon"><i class="fas fa-flask"></i>&nbsp<i class="fas fa-vial"></i><i class="fas fa-flask"></i></div>
+               <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+               <div class="col-lg-11 mx-auto">
+                  <!--This is where Handlebars views are rendered-->
+                  {{{body}}}
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer-->
+      <footer class="footer text-center">
+         <div class="container" id="cont">
+            Copyright © Reser's Fine Foods {{currentYear}}
+            <br><br>
+            <a href="/"><img id="logo" src="images/resers-logo.png"> </a> 
+			 <br><br>
+			 <p id="timer"></p>
+         </div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

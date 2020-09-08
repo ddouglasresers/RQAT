@@ -1,0 +1,26 @@
+<script>
+function urlChanger(){
+window.location.href='reports?plant=' + document.getElementById('plant').value;
+}
+</script>
+
+<form>
+<div class="card">
+  <h5 class="card-header">Reports</h5>
+  <div class="card-body">
+    <h5 class="card-title">Select a plant below</h5>
+	  
+  <input type="text"  class="form-control" name="plant" id="plant" list="plantname" placeholder="Select Plant from Dropdown" onchange="urlChanger()">      
+    <datalist id="plantname">
+  <option value="10" >10 - Century</option>
+  <option value="16" >16 - Don Pancho-West</option>
+  <option value="18" >18 - FCF-Vista</option>
+  <option value="19" >19 - Lionshead Kits</option>
+  <option value="20" >20 - Topeka Crossroads</option>
+        </datalist>
+	  
+        <br>
+	  <button type="submit"  class="btn btn-primary btn-lg">Generate Report</button>
+  </div>
+</div>
+	</form>
