@@ -1,0 +1,47 @@
+CA#,ReceiveDate,ProductName,UPC,PackSize,UBD,Time,Plant,Complaint,ReportCode,RetailerCustomer,HowReceived,ProductComments,City,ST
+32965117,2020-08-03,POTATO DEVILED EGG RESERS AMCL 6/3#,'71117.00480',6/3#,Aug-14-2020,21:56,10,Yes,'1.1',Smith's,Call Center,RB: Reported mold.,Las Vegas,NV
+32964892,2020-07-29,"STRIPS 1/4"" YLW CORN NF 1/20#",'79341.01275',1/20#,08/11/20,14:58,16,Yes,'1.1',Nicholas & Co,Sales Fwd,Customer reports moldy chips. 5 cs affected. (sample being sent to #16),,
+32964997,2020-07-31,"FLOUR TORT 13"" WHOLE WHEAT DON PANCHO 10/10/42Z",'79341.02213',10/10/42z,09/15/20,07:55,16,Yes,'1.1',Route Sales,Sales Fwd,Customer reports mold. 1 case affected.,,
+32965674,2020-08-10,"FLOUR TORT 13"" WHOLE WHEAT DON PANCHO 10/10/42Z",'79341.02213',10/10/42z,09/15/20,07:56,16,Yes,'1.1',Winco,Sales Fwd,Customer reports moldy tortillas.1 cs affected.,,
+32963586,2020-07-16,PRE CUT FOR CHIPS ULTRA THIN WHITE,'79341.22843',1/20#,08/03/20,06:12,16,Yes,'1.1',Costa Vida,Sales Fwd,Customer reports moldy chips. ,,
+32966474,2020-08-18,PRECUT YELLOW CORN,'79341.22828',1/20#,06/19/20,07:12,16,Yes,'1.1',McLean Meats,Sales Fwd,Customer reports moldy tortilla chips.,,
+32964414,2020-07-17,"WHITE FLOUR TORTILLA ORGANIC 8""",'79341.09221',10/6/9.3Z,07/28/20,07:35,16,Yes,'1.1',Safeway,E-mail,Consumer reported mold.,North Bend,OR
+32962598,2020-07-07,PRE CUT FOR CHIPS ULTRA THIN WHITE,'79341.22843',20#,07/13/2020,11:30,16,Yes,'1.1',Sysco Kansas City,Sales Fwd,Customer reports moldy chips.,,
+32962259,2020-06-30,PRECUT WHITE NON-GMO,'79341.22830',1/20#,07/14/2020,16:45,16,Yes,'1.1',PDI,Sales Fwd,Customer reports moldy tortilla chips.2 cs affected.,,
+32966142,2020-08-13,PRECUT WHITE NO PRES FROZEN (6) CHIPOTLE 1/32,'79341.22845',1/32#,200729016,,16,Yes,'1.1',Chipotle,Sales Fwd,Customer reports moldy tortilla chips. 1 cs affected.,,
+32966587,2020-08-03,POTATO AND EGG SALAD,'',,2020-se-06 ,00:23,20,Yes,'1.1',Walmart,E-mail,Consumer reported mold.,Mississauga,ON
+32966241,2020-07-28,BKD POTATO TRICLR RSTD SALT PPR MSB COSTCO 6/2/20Z,'71117.61484',6/2/20Z,8/9/20,14:46,21,Yes,'1.1',Safeway,E-mail,Consumer reported mold.,Alexandria,VA
+32962714,2020-06-30,GARLIC & ROSEMARY ROASTED POTATOES,'71117.02701',6/17Z ,06/27/2020,15:11,21,Yes,'1.1',Rouses,E-mail,Consumer reported mold.,Ponchatoula,LA
+32963121,2020-07-04,SALT AND PEPPER ROASTED POTATOES,'71117.61484',6/2/20Z,07/06/2020,15:54,21,Yes,'1.1',Costco,E-mail,RB: Reported mold.,Lumberton,NJ
+32966834,2020-08-06,BKD POTATO ROASTED TRICOLOR SEA SALT MSB 6/17Z,'71117.02702',6/17z,AUG/28/2020 ,13:07,21,Yes,'1.1',Jewel,E-mail,Consumer reported mold. (photo attached),Chicago,IL
+32966990,2020-08-24,BKD POTATO ROASTED TRICOLOR SEA SALT MSB 6/17Z,'71117.02702',6/17z,Aug 19 2020,17:18,21,Yes,'1.1',Jewel,Call Center,RB reports mold day before UBD.,Hoffman Estates,IL
+32965326,2020-08-04,BAKED BRISKET MACARONI AND CHEESE,'71117.61714',12/40z,08/06/2020,,21,Yes,'1.1',,E-mail,R&D reports item was moldy.,,
+32964659,2020-07-28,BKD POTATO ROASTED TRICOLOR SEA SALT MSB 6/17Z ,'71117.02702',6/17z ,07/08/2020,18:01,21,Yes,'1.1',Jewel,Call Center,RB reports mold.,Country Club Hills ,IL
+32964906,2020-07-30,BKD POTATO RSTD TRICOLOR GARLIC ROSE ,'71117.02701',6/17z,July 30 20 ,,21,Yes,'1.1',Redner's,Call Center,RB reports mold.,Allentown,PA
+32962513,2020-07-06,POTATOES CREAMY DELUXE MASHED MSB 6/24Z,'71117.14426',6/24z,07/13/2020,10:15,23,Yes,'1.1',King Kullen,Call Center,RB reports mold. 2 packages affected.,Syosset,NY
+32965931,2020-07-31,HORMEL TRAY HOMESTYLE 20 OZ,'37600.81145',20oz,7/31/2020,,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32965932,2020-07-31,HORMEL TRAY MAC & CHZ 20 OZ,'37600.81148',20oz,7/19/2020,,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32965933,2020-07-31,HORMEL TRAY BLB MAC & CHZ 19 OZ,'37600.81153',19oz,7/15/2020,21:03,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32965934,2020-07-31,HORMEL TRAY GARLIC 20 OZ,'37600.81154',20oz,7/25/2020,23:51,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32965935,2020-07-31,HORMEL TRAY CHBRC RICE 20 OZ,'37600.81157',20oz,7/17/2020,,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32965111,2020-08-03,POTATOES CREAMY DELUXE MASHED MSB 6/24Z,'71117.14426',6/24z,Aug 10 20,12:47,23,Yes,'1.1',Shop 'n Save,Call Center,RB reports mold.,Pittsburgh,PA
+32963710,2020-06-30,MACARONI AND CHEESE HORMEL 6/20Z,'37600.81148',,6/19/2020,18:41,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32963711,2020-06-30,MACARONI AND CHEESE HORMEL 6/20Z,'37600.81148',,6/15/2020,,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32963712,2020-06-30,MACARONI AND CHEESE HORMEL 6/20Z,'37600.81148',,6/18/2020,19:48,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32963713,2020-06-30,POTATOES MASHED LOADED HORMEL 6/20Z,'37600.81156',,6/27/2020,1:04,23,Yes,'1.1',Hormel,Retailer Report,MOLD,,
+32964092,2020-07-21,POTATOES SWEET MASHED W/MAPLE SYRUP MSB 6/20Z ,'71117.02510',6/20z ,07/27/2020,01:08,23,Yes,'1.1',Jewel-Osco,Call Center,RB reports mold.,Prospect Heights,IL
+32967224,2020-08-26,POTATOES CREAMY DELUXE MASHED MSB 6/24Z,'71117.14426',6/24z,09/21/2020,12:23,23,Yes,'1.1',Piggly Wiggly,Call Center,Consumer reported mold.,Warm Springs,GA
+32964206,2020-07-22,POTATO SALAD MUSTARD RESERS AMCL 6/3#,'71117.19303',6/3#,Jul 25 20,18:26,30,Yes,'1.1',Navy Commissary,Call Center,RB: Reported mold.,Portsmouth,VA
+32964896,2020-07-25,BKD SCALLOPED POTATOES MSB 6/20Z,'71117.03502',6/20Z,8/23/2020 ,10:31,50,Yes,'1.1',West Seattle Thriftway,E-mail,Consumer reported mold.,Seattle,WA
+32964890,2020-07-16,SEA SALT & PEPPER ROASTED POTATOES,'71117.02702',6/17Z,"August 4, 2020",,UNK,Yes,'1.1',Vons,E-mail,RB: Reported mold.,Las Vegas,NV
+32967454,2020-08-15,BKD POTATO TRICLR RSTD SALT PPR MSB COSTCO 6/2/20Z,'71117.61484',6/2/20z,Aug/15/2020,,UNK,Yes,'1.1',Costco,E-mail,Consumer reported mold.,Easton,PA
+32967458,2020-08-15,POTATO HOMESTYLE RED SMK CAD 6/2.27KG,'71117.14182',6/2.27kg,sept 1 2020 ,,UNK,Yes,'1.1',Costco,E-mail,Consumer reported that potatoes are all rotten and full of mold.,Mississauga,ON
+32967477,2020-08-16,BKD POTATO ROASTD TRICLR SEA SALT MSB CAD 6/482G,'71117.02703',6/482g,,,UNK,Yes,'1.1',Walmart,E-mail,Consumer reported mold.,Shawinigan,QC
+32967489,2020-08-29,BKD POTATO ROASTD TRICLR SEA SALT MSB CAD 6/482G,'71117.02703',6/482g,2020/AU/26,,UNK,Yes,'1.1',AB Shopper's Drug Mart,E-mail,Consumer reported mold.,Cold Lake,AB
+32963471,2020-07-15,GARLIC & ROSEMARY ROASTED POTATOES,'',,,,UNK,Yes,'1.1',,Social Media,Consumer reported rotten potatoes.,,
+32967336,2020-08-14,POTATO AND EGG SALAD,'',,"September 20, 2020",,UNK,Yes,'1.1',Walmart,E-mail,RB: Reported mold.,Surrey,BC
+32966831,2020-08-06,POTATOES CREAMY DELUXE MASHED MSB 6/24Z,'71117.14426',6/24z,August 10 2020,,UNK,Yes,'1.1',Publix,E-mail,Consumer reported mold.,Hudson,FL
+32965543,2020-07-29,DEVILED EGG POTATO SALAD,'91000.93421',,07/29/20,,UNK,Yes,'1.1',Aldi,Retailer,Consumer reports mold.,,
+32963109,2020-07-08,POTATO SALAD,'',,,,UNK,Yes,'1.1',,Social Media,Consumer reports mold.,Amery,WI
+32966256,2020-08-14,CHEESY MAC SALAD,'71117.76136',,Sep-6-2020,08:15,UNK,Yes,'1.1',Walmart,Call Center,RB reports mold.,Hamilton,ON
+32966356,2020-07-28,STEAKHOUSE MASHED POTATOES,'71117.02505',6/20Z ,Sell by jul 19,,UNK,Yes,'1.1',Ingles,E-mail,RB: Reported mold.,Sarasota,FL

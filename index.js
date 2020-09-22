@@ -30,6 +30,18 @@ app.use(function (req, res, next) {
   })
 })
 
+// get all plants and plant names from Plant table
+new sql.ConnectionPool(database.config3).connect().then(pool => {
+    
+let querycode = 'select Plant, PlantName from Plant where Inactive =' + "'" + "0" + "'";
+     
+return pool.query(querycode);
+}).then(result => {   
+
+global.plant = result.recordset;
+	
+}).catch(console.error);
+
 // global variables
 app.locals.currentYear = new Date().getFullYear(); // current year
 
@@ -37,19 +49,28 @@ app.locals.currentYear = new Date().getFullYear(); // current year
 app.get('/', function(req, res) { 
 	
 app.locals.currentUser = (req.connection.user).replace(/JVAPP\\/g, "").toLowerCase().replace(/resers\\/g, "");
-	
+
   res.render('search', {title: "Search"}); 
+});
+
+// update page
+app.get('/update', function(req, res) { 
+	
+app.locals.currentUser = (req.connection.user).replace(/JVAPP\\/g, "").toLowerCase().replace(/resers\\/g, "");
+
+  res.render('update', {title: "Update"}); 
 });
 
 // reports page
 app.get('/reports', function(req,res) {
-	
+
+// if query string, then execute the following code
 if(req.query.plant) {
 	
-	// return all plant names and numbers
+// query that pulls data from the Consumers table for ConsumerAffairs database
 new sql.ConnectionPool(database.config).connect().then(pool => {
     
-let querycode = 'select * from tblConsumers where plant = ' + "'" + req.query.plant + "'" + ' and ReceiveDate > ' + "'" + "2020-08-01" + "'" + ' order by ReceiveDate desc';
+let querycode = 'select ProductName, UPC, Plant, CustomerID, ReceiveDate, ReportCode from tblConsumers where plant = ' + "'" + req.query.plant + "'" + ' and ReceiveDate > ' + "'" + "2020-08-01" + "'" + ' order by ReceiveDate desc';
      
 return pool.query(querycode);
 }).then(result => {   
@@ -62,6 +83,11 @@ return pool.query(querycode);
 	
 	
 	
+	// if no report, then alert user. otherwise, generate spreadsheet for user.
+	if(result.recordset.length == 0) {
+		res.redirect("/reports?empty=1");
+		
+			} else {
 	
 	// output sql query into Excel file, create workbook and worksheet
 var workbook = new excel.Workbook();
@@ -94,13 +120,12 @@ var style3 = workbook.createStyle({
 });
 
 	// spreadsheet header
-worksheet.cell(1,1).string('ProductName').style(style);
+worksheet.cell(1,1).string('Product Name').style(style);
 worksheet.cell(1,2).string('UPC').style(style);
 worksheet.cell(1,3).string('Plant').style(style);
 worksheet.cell(1,4).string('Customer ID').style(style);
 worksheet.cell(1,5).string('Receive Date').style(style);
 worksheet.cell(1,6).string('Report Code').style(style);
-worksheet.cell(1,7).string('Sum').style(style);
 
 	// loop through database object and parse out corresponding fields
 		for(let i = 0, j = 2; i < result.recordset.length; i++, j++){
@@ -117,10 +142,10 @@ worksheet.cell(1,7).string('Sum').style(style);
 			worksheet.cell(j,3).string(result.recordset[i].Plant).style(style2);
 			worksheet.cell(j,4).number(result.recordset[i].CustomerID).style(style2);
 			worksheet.cell(j,5).date(result.recordset[i].ReceiveDate).style(style2);
-			worksheet.cell(j,7).formula("=sum(D:D)").style(style2);
 	}
 	
 workbook.write('Report_for_plant_' + req.query.plant + '.xlsx', res);
+			}
 	
 }).catch(console.error);
     
@@ -137,10 +162,17 @@ workbook.write('Report_for_plant_' + req.query.plant + '.xlsx', res);
 	
 } else {
 	app.locals.currentUser = (req.connection.user).replace(/JVAPP\\/g, "").toLowerCase().replace(/resers\\/g, "");
-	res.render('reports', {title: "Reports"}); 	
+	res.render('reports', {title: "Reports", plant: global.plant, queryString: req.query.empty}); 	
 }
 });
 
+// search page
+app.get('/create', function(req, res) { 
+	
+app.locals.currentUser = (req.connection.user).replace(/JVAPP\\/g, "").toLowerCase().replace(/resers\\/g, "");
+	
+  res.render('create', {title: "Create"}); 
+});
 
 // define 404 handler
 app.use(function(req,res) {
